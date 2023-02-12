@@ -1,0 +1,45 @@
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <a href="https://discord.com/invite/QevDJqCzaY" target="_blank"
+          >Codelândia</a
+        >
+      </div>
+      <div class="title">Blog</div>
+    </nav>
+    <div class="search-container">
+      <fa-icon class="search-container-icon" [icon]="faSearch"></fa-icon>
+      <input
+        #searchInput
+        class="search-container-input"
+        type="text"
+        placeholder="Pesquisar"
+        (input)="searchPost(searchInput.value)"
+      />
+    </div>
+  </div>
+</header>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="post" *ngFor="let post of arrayPost">
+        <div class="post-header">
+          <div class="post-header-date">{{ post.date }}</div>
+          <div class="post-header-like">
+            <fa-icon [icon]="faHeart"></fa-icon>
+          </div>
+        </div>
+        <div class="post-content">
+          <div class="post-content-title">
+            {{ post.title }}
+          </div>
+          <div class="post-content-body">
+            {{ post.content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
