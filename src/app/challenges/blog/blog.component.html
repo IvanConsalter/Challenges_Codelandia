@@ -24,7 +24,11 @@
 <body>
   <div class="container">
     <div class="content">
-      <div class="post" *ngFor="let post of arrayPost">
+      <div
+        class="post"
+        *ngFor="let post of arrayPost; let index = index"
+        [@slideInOut]="index % 2 === 0 ? 'left' : 'right'"
+      >
         <div class="post-header">
           <div class="post-header-date">{{ post.date }}</div>
           <div class="post-header-like">

@@ -3,11 +3,34 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { BlogService } from './blog.service';
 import { Post } from './post.model';
+import {
+  animate,
+  style,
+  transition,
+  trigger,
+  keyframes,
+} from '@angular/animations';
+
+const slideInOutStyles = [
+  { transform: 'translateX(-100%)', offset: 0 },
+  { transform: 'translateX(0%)', offset: 1 },
+];
 
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.scss'],
+  animations: [
+    trigger('slideInOut', [
+      transition(':enter', [
+        style({ transform: 'translateY(100%)' }),
+        animate('800ms linear', style({ transform: 'translateY(0%)' }))
+      ]),
+      transition(':leave', [
+        animate('800ms linear', style({ transform: 'translateY(100%)' }))
+      ])
+    ])
+  ],
 })
 export class BlogComponent implements OnInit {
   faHeart = faHeart;
