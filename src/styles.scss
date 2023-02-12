@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+$bg-primary: #0E091B;
+$text-light: #f9f9f9;
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: $bg-primary;
+  color: $text-light;
+}
