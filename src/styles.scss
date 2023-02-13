@@ -3,6 +3,9 @@ $bg-primary: #0E091B;
 $text-light: #f9f9f9;
 
 body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Roboto Mono', monospace;
   background: $bg-primary;
   color: $text-light;
