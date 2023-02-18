@@ -1,0 +1,106 @@
+$bgSite: #f6f6f6;
+$bgCard: #ebe9ea;
+$white: #fff;
+$black-light: #181818;
+$gray: #474747;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../../assets/jordan-shoes/font/Montserrat-Medium.ttf") format("truetype");
+}
+
+@mixin text-center-padding($background) {
+  background: $background;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.html {
+  font-family: "Montserrat", sans-serif;
+  background: $bgSite;
+  width: 100%;
+
+  .header {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../assets/jordan-shoes/img/wallpaper.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 450px;
+
+    .discount {
+      @include text-center-padding($black-light);
+    }
+
+    .title {
+      @include text-center-padding($bgSite);
+      color: $black-light;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      max-width: 600px;
+      padding: 3rem 0 0 4rem;
+
+      @media screen and (max-width: 600px) {
+        align-items: center;
+        padding: 0;
+        padding-top: 3rem;
+      }
+
+      p {
+        margin-top: 2rem;
+        line-height: 1.7;
+        letter-spacing: 2px;
+        max-width: 500px;
+        font-style: italic;
+      }
+    }
+  }
+
+  .body {
+    padding: 3rem 0;
+
+    & p:first-of-type {
+      font-weight: bold;
+      font-size: 1.7rem;
+      padding: 0;
+    }
+
+    p {
+      @include text-center-padding($bgSite);
+      color: $black-light;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .img-container {
+      max-width: 1200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin: 0 auto;
+
+      img {
+        background: $bgCard;
+        max-width: 300px;
+      }
+    }
+  }
+
+  .footer {
+    width: 100%;
+    background: $black-light;
+    text-align: center;
+    padding: .5rem 0;
+  }
+}
