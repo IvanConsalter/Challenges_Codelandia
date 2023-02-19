@@ -2,6 +2,7 @@ $green-light: #04C35C;
 $purple-light: #2B6CB0;
 $white: #FFF;
 $white-200: #F7FAFC;
+$gray-light: #717171a1;
 $gray-dark: #1A202C;
 
 @font-face {
@@ -91,7 +92,7 @@ input[type="checkbox"]:checked::before {
 
         input {
           padding: .8rem;
-          border: 1px solid $white-200;
+          border: 1px solid $gray-light;
           outline: none;
           margin-top: .4rem;
           border-radius: .3rem;
