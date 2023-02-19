@@ -6,7 +6,7 @@ $gray: #474747;
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../../../assets/jordan-shoes/font/Montserrat-Medium.ttf") format("truetype");
+  src: url("../../../assets/challenges/jordan-shoes/font/Montserrat-Medium.ttf") format("truetype");
 }
 
 @mixin text-center-padding($background) {
@@ -23,7 +23,7 @@ $gray: #474747;
   .header {
     position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../../../assets/jordan-shoes/img/wallpaper.jpeg");
+      url("../../../assets/challenges/jordan-shoes/img/wallpaper.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -57,6 +57,7 @@ $gray: #474747;
 
       p {
         margin-top: 2rem;
+        padding: 0 2rem;
         line-height: 1.7;
         letter-spacing: 2px;
         max-width: 500px;

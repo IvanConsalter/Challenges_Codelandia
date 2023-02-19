@@ -11,6 +11,6 @@ export class BlogService {
   constructor(private http: HttpClient) { }
 
   getPosts(): Observable<Array<Post>> {
-    return this.http.get<Array<Post>>('assets/data/blog.json');
+    return this.http.get<Array<Post>>('./assets/challenges/blog/data/blog.json');
   }
 }
