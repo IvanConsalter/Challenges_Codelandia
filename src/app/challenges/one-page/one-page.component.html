@@ -1,0 +1,48 @@
+<div class="hero">
+  <div class="hero-content">
+    <div class="info">
+      <p class="info-title">Lorem ipsum dolor sit amet</p>
+      <p class="info-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eius
+        itaque esse cum libero explicabo, suscipit vero enim eaque veniam!
+      </p>
+      <button class="btn info-btn">Saiba mais</button>
+    </div>
+    <div class="img">
+      <img
+        src="../../../assets/challenges/one-page/img/illustration.svg"
+        alt="one-page-img"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="body">
+  <div class="body-content">
+    <div class="card" *ngFor="let background of arrayRandomBackground">
+      <div class="card-img" [style.background]="background"></div>
+      <div class="card-title">Título do card</div>
+      <div class="card-text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+          facilis, natus distinctio error molestias rerum?
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contact">
+  <div class="contact-title">
+    <p>Entre em contato</p>
+  </div>
+  <div class="contact-form">
+    <form>
+      <input type="text" placeholder="Nome" />
+      <input type="text" placeholder="E-mail" />
+      <input type="text" placeholder="Telefone" />
+      <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem..."></textarea>
+      <button class="btn">Enviar mensagem</button>
+    </form>
+  </div>
+</div>

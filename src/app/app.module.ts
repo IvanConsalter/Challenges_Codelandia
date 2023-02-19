@@ -10,6 +10,7 @@ import { BlogComponent } from './challenges/blog/blog.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { JordanShoesComponent } from './challenges/jordan-shoes/jordan-shoes.component';
+import { OnePageComponent } from './challenges/one-page/one-page.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { JordanShoesComponent } from './challenges/jordan-shoes/jordan-shoes.com
     BlogComponent,
     HomeComponent,
     JordanShoesComponent,
+    OnePageComponent,
   ],
   imports: [
     BrowserModule,
