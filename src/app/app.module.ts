@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { JordanShoesComponent } from './challenges/jordan-shoes/jordan-shoes.component';
 import { OnePageComponent } from './challenges/one-page/one-page.component';
+import { LoginComponent } from './challenges/login/login.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { OnePageComponent } from './challenges/one-page/one-page.component';
     HomeComponent,
     JordanShoesComponent,
     OnePageComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
