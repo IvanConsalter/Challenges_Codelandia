@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { JordanShoesComponent } from './challenges/jordan-shoes/jordan-shoes.component';
 import { OnePageComponent } from './challenges/one-page/one-page.component';
 import { LoginComponent } from './challenges/login/login.component';
+import { ChihiroComponent } from './challenges/chihiro/chihiro.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { LoginComponent } from './challenges/login/login.component';
     JordanShoesComponent,
     OnePageComponent,
     LoginComponent,
+    ChihiroComponent,
   ],
   imports: [
     BrowserModule,

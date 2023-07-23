@@ -5,6 +5,7 @@ import { JordanShoesComponent } from './challenges/jordan-shoes/jordan-shoes.com
 import { LoginComponent } from './challenges/login/login.component';
 import { OnePageComponent } from './challenges/one-page/one-page.component';
 import { HomeComponent } from './home/home.component';
+import { ChihiroComponent } from './challenges/chihiro/chihiro.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'chihiro',
+    component: ChihiroComponent
   }
 ];
 
