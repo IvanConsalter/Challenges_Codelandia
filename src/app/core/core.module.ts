@@ -3,6 +3,8 @@ import { FooterComponent } from "./footer/footer.component";
 import { NavbarComponent } from "./navbar/navbar.component";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
+import { NgIconsModule } from '@ng-icons/core';
+import { bootstrapGithub, bootstrapLinkedin, bootstrapHeart } from '@ng-icons/bootstrap-icons';
 
 @NgModule({
   declarations: [
@@ -11,7 +13,9 @@ import { RouterModule } from "@angular/router";
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+
+    NgIconsModule.withIcons({ bootstrapGithub, bootstrapLinkedin, bootstrapHeart })
   ],
   exports: [
     NavbarComponent,

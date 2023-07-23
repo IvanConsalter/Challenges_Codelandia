@@ -12,6 +12,8 @@ import { LoginComponent } from './challenges/login/login.component';
 import { ChihiroComponent } from './challenges/chihiro/chihiro.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { NgIconsModule } from '@ng-icons/core';
+import { bootstrapGithub, bootstrapLinkedin, bootstrapHeart } from '@ng-icons/bootstrap-icons';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { HttpClientModule } from '@angular/common/http';
 
     CoreModule,
 
+    NgIconsModule.withIcons({ bootstrapGithub, bootstrapLinkedin, bootstrapHeart })
   ],
   providers: [],
   bootstrap: [AppComponent],
