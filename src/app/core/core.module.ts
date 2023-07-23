@@ -2,7 +2,6 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { FooterComponent } from "./footer/footer.component";
 import { NavbarComponent } from "./navbar/navbar.component";
 import { CommonModule } from "@angular/common";
-import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { RouterModule } from "@angular/router";
 
 @NgModule({
@@ -12,9 +11,7 @@ import { RouterModule } from "@angular/router";
   ],
   imports: [
     CommonModule,
-    RouterModule,
-
-    FontAwesomeModule
+    RouterModule
   ],
   exports: [
     NavbarComponent,
