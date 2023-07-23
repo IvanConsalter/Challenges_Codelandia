@@ -47,7 +47,7 @@ input[type="checkbox"]:checked::before {
       display: flex;
       justify-content: center;
 
-      @media screen and(max-width: 1000px) {
+      @media screen and (max-width: 1000px) {
         display: none;
       }
 
@@ -67,7 +67,7 @@ input[type="checkbox"]:checked::before {
       align-items: center;
       color: $gray-dark;
 
-      @media screen and(max-width: 1000px) {
+      @media screen and (max-width: 1000px) {
         width: 100%;
       }
 
