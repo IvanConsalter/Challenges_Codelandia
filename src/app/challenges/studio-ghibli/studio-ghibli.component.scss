@@ -19,6 +19,10 @@ $fontMedium: 'Poppins-Medium',sans-serif;
   background: linear-gradient(-45deg, $colorSecondary, $colorPrimary );
   overflow-y: hidden;
 
+  @media screen and (max-width: 1050px) {
+    overflow-y: scroll;
+  }
+
   & header {
     max-width: 1100px;
     margin: auto;
@@ -53,19 +57,25 @@ $fontMedium: 'Poppins-Medium',sans-serif;
   & .content {
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 6rem;
 
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 1050px){
       flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
+      padding: 2rem;
     }
 
     &__text {
       max-width: 25rem;
       margin: auto;
       padding: 1rem;
+
+      @media screen and (max-width: 1050px) {
+        margin-top: -5rem;
+      }
 
       h3 {
         font-family: $fontMedium;
@@ -87,6 +97,10 @@ $fontMedium: 'Poppins-Medium',sans-serif;
         display: flex;
         gap: 1rem;
 
+        @media screen and (max-width: 1050px) {
+          flex-direction: column;
+        }
+
         .btn {
           border: none;
           outline: none;
@@ -97,11 +111,13 @@ $fontMedium: 'Poppins-Medium',sans-serif;
           font-family: $fontMedium;
           color: #fff;
           cursor: pointer;
+          text-decoration: none;
 
           &__primary {
             background-color: $colorPrimary;
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: .5rem;
           }
 
@@ -119,8 +135,8 @@ $fontMedium: 'Poppins-Medium',sans-serif;
         width: 40rem;
         animation: moveUpDown 4s linear infinite;
 
-        @media screen and (max-width: 800px){
-          width: 30rem;
+        @media screen and (max-width: 1050px){
+          width: 23rem;
         }
       }
     }
