@@ -70,7 +70,6 @@ $fontMedium: 'Poppins-Medium',sans-serif;
 
     &__text {
       max-width: 25rem;
-      margin: auto;
       padding: 1rem;
 
       @media screen and (max-width: 1050px) {
@@ -112,6 +111,7 @@ $fontMedium: 'Poppins-Medium',sans-serif;
           color: #fff;
           cursor: pointer;
           text-decoration: none;
+          text-align: center;
 
           &__primary {
             background-color: $colorPrimary;
